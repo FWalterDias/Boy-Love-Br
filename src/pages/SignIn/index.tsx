@@ -1,7 +1,7 @@
 
 export function SignIn() {
   return (
-    <div className="text-3xl font-bold underline">
+    <div className="bg-red-500 p-10 font-comic">
       pagina de login
     </div>
   )
