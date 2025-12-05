@@ -28,12 +28,12 @@ export function Home() {
         </div>
 
         <div className="flex flex-col gap-5">
-          <NavLink to="/login" className="w-full flex items-center justify-center gap-5 bg-[#252D4A] p-6 rounded-xl">
+          <NavLink to="/login" className="w-full flex items-center justify-center gap-5 bg-[#252D4A] p-4 rounded-xl">
             <MdEmail className="text-[#B0E2FF] text-3xl" />
             <span className="text-2xl">{pageContent[path].actionPrimary}</span>
           </NavLink>
 
-          <NavLink to="#" className="w-full flex items-center justify-center gap-5 bg-[#252D4A] p-6 rounded-xl">
+          <NavLink to="#" className="w-full flex items-center justify-center gap-5 bg-[#252D4A] p-4 rounded-xl">
             <HiUser className="text-[#B0E2FF] text-3xl" />
             <span className="text-2xl">{pageContent[path].actionSecondary}</span>
           </NavLink>

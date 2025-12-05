@@ -38,7 +38,7 @@ export function LoginOrSignUp() {
 
                     {
                         path == "/signUp" ?
-                            <div className="w-full flex items-center justify-center gap-5 bg-[#252D4A] p-6 rounded-xl">
+                            <div className="w-full flex items-center justify-center gap-5 bg-[#252D4A] p-4 rounded-xl">
                                 <MdEmail className="text-[#B0E2FF] text-3xl" />
                                 <input
                                     type="email"
@@ -47,7 +47,7 @@ export function LoginOrSignUp() {
                             </div> : null
                     }
 
-                    <div className="w-full flex items-center justify-center gap-5 bg-[#252D4A] p-6 rounded-xl">
+                    <div className="w-full flex items-center justify-center gap-5 bg-[#252D4A] p-4 rounded-xl">
                         <PiLockKeyBold className="text-[#B0E2FF] text-3xl" />
                         <input
                             type="password"
