@@ -57,10 +57,15 @@ export function LoginOrSignUp() {
                 </div>
             </section>
 
-            <div className="w-full flex justify-center mt-10">
+            <div className="w-full flex flex-col items-center justify-center gap-5 mt-10">
                 <button className="w-3/4 p-2 bg-[#252D4A] rounded-xl">
                     {path == "/login" ? "Entrar" : "Criar conta"}
                 </button>
+
+                {
+                    path == '/signUp' ? 
+                    <NavLink to='/login'>Fazer Login</NavLink> : null
+                }
             </div>
 
             {
