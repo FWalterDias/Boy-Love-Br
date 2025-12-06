@@ -10,19 +10,24 @@ export function Home() {
   const path: string = useLocation().pathname;
 
   return (
-    <div className="w-full flex flex-col gap-2 items-center">
-      <section className="w-[160px] h-[225px]">
+    <div className="w-full flex flex-col lg:flex-row gap-2 items-center justify-evenly">
+      <section className="relative w-[160px] h-[225px] lg:w-[450px] lg:h-auto">
         <img
           src={pageContent[path].image}
           alt="imagem de login"
           className="w-full rounded-lg"
         />
+
+        <section className="hidden lg:flex gap-2 justify-center items-center absolute -bottom-15 left-65">
+          <GiLovers className="text-[#B0E2FF] text-3xl" />
+          <span className="bg-gradient-to-r from-[#7FD1CC] to-[#9694F5] bg-clip-text text-transparent">Boy Love Br</span>
+        </section>
       </section>
 
-      <section className="w-full flex flex-col gap-10 mt-8">
+      <section className="w-full lg:w-lg flex flex-col gap-10 mt-8">
         <div>
-          <h2 className="text-5xl font-semibold">Boas Vindas!</h2>
-          <p className="text-2xl mt-2">
+          <h2 className="text-5xl lg:text-7xl font-semibold">Boas Vindas!</h2>
+          <p className="text-xl lg:text-2xl mt-2">
             {pageContent[path].description}
           </p>
         </div>
@@ -30,17 +35,17 @@ export function Home() {
         <div className="flex flex-col gap-5">
           <NavLink to="/login" className="w-full flex items-center justify-center gap-5 bg-[#252D4A] p-4 rounded-xl">
             <MdEmail className="text-[#B0E2FF] text-3xl" />
-            <span className="text-2xl">{pageContent[path].actionPrimary}</span>
+            <span className="text-xl lg:text-2xl">{pageContent[path].actionPrimary}</span>
           </NavLink>
 
           <NavLink to="#" className="w-full flex items-center justify-center gap-5 bg-[#252D4A] p-4 rounded-xl">
             <HiUser className="text-[#B0E2FF] text-3xl" />
-            <span className="text-2xl">{pageContent[path].actionSecondary}</span>
+            <span className="text-xl lg:text-2xl">{pageContent[path].actionSecondary}</span>
           </NavLink>
         </div>
       </section>
 
-      <section className="w-full flex gap-2 justify-center items-center fixed bottom-5">
+      <section className="w-full lg:hidden flex gap-2 justify-center items-center fixed bottom-5">
         <GiLovers className="text-[#B0E2FF] text-3xl" />
         <span className="bg-gradient-to-r from-[#7FD1CC] to-[#9694F5] bg-clip-text text-transparent">Boy Love Br</span>
       </section>

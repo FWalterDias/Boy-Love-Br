@@ -6,7 +6,7 @@ export const pageContent: Record<string, PageContent> = {
     "/": {
       image: homeImage,
       description:
-        "Faça seu login para salvar vídeos, ter acesso a playlists e histórico, ou acesse como visitante.",
+        "Faça seu login para salvar videos, ter acesso a playlists, e historico, ou acesse como visitante.",
       actionPrimary: "Entrar ou Cadastrar",
       actionSecondary: "Acessar como Visitante",
     },
@@ -14,7 +14,7 @@ export const pageContent: Record<string, PageContent> = {
     "/home": {
       image: homeImage,
       description:
-        "Faça seu login para salvar vídeos, ter acesso a playlists e histórico, ou acesse como visitante.",
+        "Faça seu login para salvar videos, ter acesso a playlists, e historico, ou acesse como visitante.",
       actionPrimary: "Entrar ou Cadastrar",
       actionSecondary: "Acessar como Visitante",
     },
