@@ -1,5 +1,6 @@
-import { Logo } from "../../components/Logo";
-import { NavBar } from "../../components/NavBar";
+import { Logo } from "../../components/Logo"
+import { NavBar } from "../../components/NavBar"
+import iconSearch from "../../assets/icon_search.png"
 
 export function Home() {
     return (
@@ -10,6 +11,25 @@ export function Home() {
 
             <section className="w-lg mt-8">
                 <NavBar />
+            </section>
+
+            <section className="flex items-center w-full gap-5 mt-10">
+                <p className="text-xl">Adicionados Recentemente</p>
+
+                <div className="relative w-1/2">
+                    <img
+                        src={iconSearch}
+                        alt="iconSearch"
+                        className="w-[20px] absolute"
+                    />
+
+                    <input
+                        type="text"
+                        name="searchInput"
+                        id="searchInput"
+                        className="border-b w-full focus:outline-none pl-10 text-xl leading-none"
+                    />
+                </div>
             </section>
         </div>
     )
