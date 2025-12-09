@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router"
-import { Inicio } from "../pages/Inicio"
-import { SignInOrSignUp } from "../pages/SignInOrSignUp"
-import { Home } from "../pages/Home"
+import { Inicio } from "../pages/inicio"
+import { SignInOrSignUp } from "../pages/signInOrSignup"
+import { Home } from "../pages/home"
 
 
 export function MainRoutes() {
