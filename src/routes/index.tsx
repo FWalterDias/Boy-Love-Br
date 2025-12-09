@@ -1,16 +1,19 @@
 import { Route, Routes } from "react-router"
-import { Home } from "../pages/home"
-import { LoginOrSignUp } from "../pages/LoginOrSignUp"
+import { Inicio } from "../pages/Inicio"
+import { SignInOrSignUp } from "../pages/SignInOrSignUp"
+import { Home } from "../pages/Home"
 
 
 export function MainRoutes() {
 
     return(
         <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Inicio />} />
+            <Route path="/inicio" element={<Inicio />} />
+            <Route path="/login" element={<SignInOrSignUp />} />
+            <Route path="/signUp" element={<SignInOrSignUp />} />
+
             <Route path="/home" element={<Home />} />
-            <Route path="/login" element={<LoginOrSignUp />} />
-            <Route path="/signUp" element={<LoginOrSignUp />} />
         </Routes>
     )
 }
