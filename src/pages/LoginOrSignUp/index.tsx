@@ -1,9 +1,9 @@
-import { NavLink, useLocation } from "react-router";
-import { pageContent } from "../../utils/dataLogin";
-import { MdEmail } from "react-icons/md";
-import { HiUser } from "react-icons/hi2";
-import { GiLovers } from "react-icons/gi";
+import { HiUser } from "react-icons/hi2"
+import { MdEmail } from "react-icons/md"
 import { PiLockKeyBold } from "react-icons/pi"
+import { NavLink, useLocation } from "react-router"
+import { Logo } from "../../components/Logo"
+import { pageContent } from "../../utils/dataLogin"
 
 export function LoginOrSignUp() {
 
@@ -18,9 +18,8 @@ export function LoginOrSignUp() {
                     className="w-full rounded-lg"
                 />
 
-                <section className="hidden lg:flex gap-2 justify-center items-center absolute -bottom-15 left-65">
-                    <GiLovers className="text-[#B0E2FF] text-3xl" />
-                    <span className="bg-gradient-to-r from-[#7FD1CC] to-[#9694F5] bg-clip-text text-transparent">Boy Love Br</span>
+                <section className="hidden lg:flex absolute -bottom-15 left-65">
+                    <Logo />
                 </section>
             </section>
 
@@ -82,9 +81,8 @@ export function LoginOrSignUp() {
                 }
             </section>
 
-            <section className="w-full lg:hidden flex gap-2 justify-center items-center fixed bottom-5">
-                <GiLovers className="text-[#B0E2FF] text-3xl" />
-                <span className="bg-gradient-to-r from-[#7FD1CC] to-[#9694F5] bg-clip-text text-transparent">Boy Love Br</span>
+            <section className="w-full lg:hidden fixed bottom-5">
+                <Logo />
             </section>
         </div>
     )
