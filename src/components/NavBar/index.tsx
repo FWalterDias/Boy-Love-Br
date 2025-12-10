@@ -11,11 +11,11 @@ export function NavBar() {
     const path: string = useLocation().pathname;
 
     return (
-        <nav className="w-full h-[45px] flex justify-evenly items-center bg-[#181C2A] p-3 rounded-lg">
+        <nav className="w-full h-[45px] flex justify-evenly items-center bg-[#181C2A] p-2 rounded-lg">
             <NavLink to="/home"
-                className={path === "/home" ? "h-full pb-1 border-b-2 border-transparent [border-image:linear-gradient(to_right,#7FD1CC,#9694F5)_1]" : "h-full"}>
+                className={path === "/home" ? "h-full border-b-2 border-transparent [border-image:linear-gradient(to_right,#7FD1CC,#9694F5)_1]" : "h-full"}>
                 <img
-                    className="w-10"
+                    className="w-5"
                     src={path == "/home" ? homeColored : homeGray}
                     alt=""
                 />
@@ -23,9 +23,9 @@ export function NavBar() {
 
             <NavLink to="/home/discover"
             className={({ isActive }) =>
-                isActive ? "h-full pb-1  border-b-2 border-transparent [border-image:linear-gradient(to_right,#7FD1CC,#9694F5)_1]" : "h-full"}>
+                isActive ? "h-full  border-b-2 border-transparent [border-image:linear-gradient(to_right,#7FD1CC,#9694F5)_1]" : "h-full"}>
                 <img
-                    className="w-10"
+                    className="w-5"
                     src={path == "/home/discover" ? discoverColored : discoverGray}
                     alt=""
                 />
@@ -33,9 +33,9 @@ export function NavBar() {
 
             <NavLink to="/home/category" 
             className={({ isActive }) =>
-                isActive ? "h-full pb-1  border-b-2 border-transparent [border-image:linear-gradient(to_right,#7FD1CC,#9694F5)_1]" : "h-full"}>
+                isActive ? "h-full border-b-2 border-transparent [border-image:linear-gradient(to_right,#7FD1CC,#9694F5)_1]" : "h-full"}>
                 <img
-                    className="w-10"
+                    className="w-5"
                     src={path == "/home/category" ? categoryColored : categoryGray}
                     alt=""
                 />

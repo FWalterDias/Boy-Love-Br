@@ -17,15 +17,15 @@ export function Inicio() {
           className="w-full rounded-lg"
         />
 
-        <section className="hidden lg:flex absolute -bottom-15 left-65">
+        <section className="hidden lg:flex absolute -bottom-15 left-30">
           <Logo />
         </section>
       </section>
 
       <section className="w-full lg:w-lg flex flex-col gap-10 mt-8">
         <div>
-          <h2 className="text-5xl lg:text-7xl font-semibold">Boas Vindas!</h2>
-          <p className="text-xl lg:text-2xl mt-2">
+          <h2 className="text-3xl lg:text-4xl font-semibold">Boas Vindas!</h2>
+          <p className="text-sm lg:text-xl mt-2">
             {pageContent[path].description}
           </p>
         </div>
@@ -33,16 +33,16 @@ export function Inicio() {
         <div className="flex flex-col gap-5">
           <NavLink
             to="/login"
-            className="w-full flex items-center justify-center gap-5 bg-[#252D4A] p-4 rounded-xl">
+            className="w-full flex items-center justify-center gap-3 bg-[#252D4A] p-2 py-4 rounded-xl">
             <MdEmail className="text-[#B0E2FF] text-3xl" />
-            <span className="text-xl lg:text-2xl">{pageContent[path].actionPrimary}</span>
+            <span className="text-sm lg:text-lg">{pageContent[path].actionPrimary}</span>
           </NavLink>
 
           <NavLink
             to={pageContent[path].actionSecondary === "Acessar como Visitante" ? "/home" : "#"}
-            className="w-full flex items-center justify-center gap-5 bg-[#252D4A] p-4 rounded-xl">
+            className="w-full flex items-center justify-center gap-3 bg-[#252D4A] p-2 py-4  rounded-xl">
             <HiUser className="text-[#B0E2FF] text-3xl" />
-            <span className="text-xl lg:text-2xl">{pageContent[path].actionSecondary}</span>
+            <span className="text-sm lg:text-lg">{pageContent[path].actionSecondary}</span>
           </NavLink>
         </div>
       </section>

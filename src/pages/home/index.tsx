@@ -10,7 +10,7 @@ export function Home() {
                 <Logo />
             </div>
 
-            <section className="w-lg mt-8">
+            <section className="w-xs mt-5">
                 <NavBar />
             </section>
 
