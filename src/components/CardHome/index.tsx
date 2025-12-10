@@ -29,7 +29,7 @@ export function CardHome({ content }: { content: ContentType }) {
                             </Link>
                             <p className="text-sm text-[#8D95AF]">{content.producer}</p>
                         </div>
-                        <div className="w-full flex justify-end gap-1">
+                        <div className="w-1/4 flex justify-end gap-1">
                             <div>
                                 <p className="text-xs">IMDB</p>
                                 <p className="text-xs">{content.imdb}</p>

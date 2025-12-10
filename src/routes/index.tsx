@@ -18,7 +18,7 @@ export function MainRoutes() {
 
             <Route path="/home" element={<Home />}>
                 <Route index  element={<SectionHome />} />
-                <Route path=":titleContent" element={<Player />} />
+                <Route path=":idContent" element={<Player />} />
 
                 <Route path="discover" element={<SectionDiscover />} />
             </Route>

@@ -1,15 +1,28 @@
-import { Navigate } from "react-router";
-import start from "../../assets/star.png"
-import { useCurrentContent } from "../../store/useCurrentContent"
+import { Link, useLocation } from "react-router";
+import start from "../../assets/star.png";
+import { useCurrentContent } from "../../store/useCurrentContent";
 
 export function Player() {
 
     const { currentContent } = useCurrentContent();
+    const idContentPath = useLocation().pathname.split("/").slice(-1).toString();
 
-    if (currentContent === null){
-        return <Navigate to="/home" replace />;  
-    } 
-    
+    if (currentContent === null || currentContent.id !== Number(idContentPath)) {
+        return (
+            <div className="w-full flex flex-col items-center justify-center gap-10 mt-10">
+                <p className="text-sm text-center">
+                    Nenhum conteúdo carregado.
+                </p>
+                <Link
+                    to="/home"
+                    className="text-sm bg-linear-to-r from-[#7FD1CC] to-[#9694F5] bg-clip-text text-transparent font-bold"
+                >
+                    Retornar para pagina inicial
+                </Link>
+            </div>
+        );
+    }
+
     return (
         <section className="w-full flex flex-col bg-[#181C2A] rounded-lg p-2 mt-5">
 
