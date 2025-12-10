@@ -11,7 +11,7 @@ export function Signinorsignup() {
 
     return (
         <div className="w-full flex flex-col lg:flex-row gap-2 items-center justify-evenly">
-            <section className="relative w-[160px] h-[225px] lg:w-[450px] lg:h-auto">
+            <section className="relative w-40 h-[225px] lg:w-[450px] lg:h-auto">
                 <img
                     src={pageContent[path].image}
                     alt="imagem de login"

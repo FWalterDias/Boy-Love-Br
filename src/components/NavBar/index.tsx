@@ -13,31 +13,30 @@ export function NavBar() {
     return (
         <nav className="w-full h-[45px] flex justify-evenly items-center bg-[#181C2A] p-3 rounded-lg">
             <NavLink to="/home"
-                className={({ isActive }) =>
-                    isActive ? "h-full border-b-2 border-[transparent] [border-image:linear-gradient(to_right,#7FD1CC,#9694F5)_1]" : ""}>
+                className={path === "/home" ? "h-full pb-1 border-b-2 border-transparent [border-image:linear-gradient(to_right,#7FD1CC,#9694F5)_1]" : "h-full"}>
                 <img
-                    className="h-full"
+                    className="w-10"
                     src={path == "/home" ? homeColored : homeGray}
                     alt=""
                 />
             </NavLink>
 
-            <NavLink to="/search" 
+            <NavLink to="/home/search"
             className={({ isActive }) =>
-                isActive ? "h-full border-b-2 border-[transparent] [border-image:linear-gradient(to_right,#7FD1CC,#9694F5)_1]" : "h-full"}>
+                isActive ? "h-full pb-1  border-b-2 border-transparent [border-image:linear-gradient(to_right,#7FD1CC,#9694F5)_1]" : "h-full"}>
                 <img
-                    className="h-full"
-                    src={path == "/search" ? searchColored : searchGray}
+                    className="w-10"
+                    src={path == "/home/search" ? searchColored : searchGray}
                     alt=""
                 />
             </NavLink>
 
-            <NavLink to="/category" 
+            <NavLink to="/home/category" 
             className={({ isActive }) =>
-                isActive ? "h-full border-b-2 border-[transparent] [border-image:linear-gradient(to_right,#7FD1CC,#9694F5)_1]" : "h-full"}>
+                isActive ? "h-full pb-1  border-b-2 border-transparent [border-image:linear-gradient(to_right,#7FD1CC,#9694F5)_1]" : "h-full"}>
                 <img
-                    className="h-full"
-                    src={path == "/category" ? categoryColored : categoryGray}
+                    className="w-10"
+                    src={path == "/home/category" ? categoryColored : categoryGray}
                     alt=""
                 />
             </NavLink>
