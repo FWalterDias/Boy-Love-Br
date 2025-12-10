@@ -1,6 +1,6 @@
 import { Link } from "react-router"
 import type { ContentType } from "../../types/contentType"
-import { useCurrentContent } from "../../store/useCurrentContent"
+import { useCurrentContent } from "../../context/useCurrentContent"
 import { useEffect } from "react"
 
 export function CardDiscover({ content }: { content: ContentType }) {

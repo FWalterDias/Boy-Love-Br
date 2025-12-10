@@ -6,7 +6,7 @@ import homeGray from "../../assets/home_gray.png"
 import discoverColored from "../../assets/discover_colored.png"
 import discoverGray from "../../assets/discover_gray.png"
 
-export function NavBar() {
+export function NavBarMobile() {
 
     const path: string = useLocation().pathname;
 

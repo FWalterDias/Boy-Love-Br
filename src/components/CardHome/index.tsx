@@ -1,7 +1,7 @@
 import { Link } from "react-router"
 import start from "../../assets/star.png"
 import type { ContentType } from "../../types/contentType"
-import { useCurrentContent } from "../../store/useCurrentContent"
+import { useCurrentContent } from "../../context/useCurrentContent"
 
 export function CardHome({ content }: { content: ContentType }) {
 

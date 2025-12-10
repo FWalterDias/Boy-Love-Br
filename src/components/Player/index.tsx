@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router";
 import start from "../../assets/star.png";
-import { useCurrentContent } from "../../store/useCurrentContent";
+import { useCurrentContent } from "../../context/useCurrentContent";
 
 export function Player() {
 

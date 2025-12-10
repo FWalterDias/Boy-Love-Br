@@ -2,7 +2,7 @@ import { HiUser } from "react-icons/hi2"
 import { MdEmail } from "react-icons/md"
 import { NavLink, useLocation } from "react-router"
 import { Logo } from "../../components/Logo"
-import { pageContent } from "../../utils/dataLogin"
+import { pageContent } from "../../database/dataLogin"
 
 export function Inicio() {
 

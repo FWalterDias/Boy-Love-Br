@@ -1,5 +1,5 @@
 import { CardDiscover } from "../CardDiscover"
-import { dataCards } from "../../utils/dataCards"
+import { dataCards } from "../../database/dataCards"
 import type { ContentType } from "../../types/contentType"
 
 export function SectionDiscover() {

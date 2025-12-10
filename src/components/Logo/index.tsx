@@ -8,7 +8,10 @@ export function Logo() {
     const path: string = useLocation().pathname;
 
     return (
-        <Link to={outRoutes.includes(path) ? "/" : "/home"} className="w-full flex gap-2 justify-center items-center">
+        <Link
+            to={outRoutes.includes(path) ? "/" : "/home"}
+            className="w-full lg:w-fit flex gap-2 justify-center items-center lg:absolute top-2"
+        >
             <GiLovers className="text-[#B0E2FF] text-2xl" />
             <span className="bg-linear-to-r from-[#7FD1CC] to-[#9694F5] bg-clip-text text-transparent font-bold text-2xl">Boy Love BR</span>
         </Link>

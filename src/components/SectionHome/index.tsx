@@ -1,12 +1,12 @@
 import iconSearch from "../../assets/icon_search.png"
 import type { ContentType } from "../../types/contentType"
-import { dataCards } from "../../utils/dataCards"
+import { dataCards } from "../../database/dataCards"
 import { CardHome } from "../CardHome"
 
 export function SectionHome() {
     return (
         <section className="w-full">
-            <div className="flex items-center w-full gap-5 mt-5">
+            <div className="lg:hidden flex items-center w-full gap-5 mt-5">
                 <p className="text-xs">Adicionados Recentemente</p>
 
                 <div className="relative w-1/2">
@@ -25,7 +25,11 @@ export function SectionHome() {
                 </div>
             </div>
 
-            <div className="w-full flex flex-col gap-5 mt-8">
+            <div className="hidden lg:block w-full mt-5">
+                <p className="text-md">Adicionados Recentemente</p>
+            </div>
+
+            <div className="w-full flex flex-col gap-5 mt-8 lg:mt-5">
                 {
                     dataCards.length > 1 ? dataCards.map((content: ContentType) => (
                         <CardHome key={content.id} content={content} />

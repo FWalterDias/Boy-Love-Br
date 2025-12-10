@@ -3,7 +3,7 @@ import { MdEmail } from "react-icons/md"
 import { PiLockKeyBold } from "react-icons/pi"
 import { NavLink, useLocation } from "react-router"
 import { Logo } from "../../components/Logo"
-import { pageContent } from "../../utils/dataLogin"
+import { pageContent } from "../../database/dataLogin"
 
 export function Signinorsignup() {
 
