@@ -1,7 +1,7 @@
 import iconSearch from "../../assets/icon_search.png"
-import { Card } from "../../components/Card"
 import type { ContentType } from "../../types/contentType"
 import { dataCards } from "../../utils/dataCards"
+import { CardHome } from "../CardHome"
 
 export function SectionHome() {
     return (
@@ -28,7 +28,7 @@ export function SectionHome() {
             <div className="w-full flex flex-col gap-5 mt-10">
                 {
                     dataCards.length > 1 ? dataCards.map((content: ContentType, indice) => (
-                        <Card key={indice} content={content} />
+                        <CardHome key={indice} content={content} />
                     )) : null
                 }
             </div>

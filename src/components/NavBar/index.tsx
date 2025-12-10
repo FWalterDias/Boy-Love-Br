@@ -3,8 +3,8 @@ import categoryColored from "../../assets/category_colored.png"
 import categoryGray from "../../assets/category_gray.png"
 import homeColored from "../../assets/home_colored.png"
 import homeGray from "../../assets/home_gray.png"
-import searchColored from "../../assets/search_colored.png"
-import searchGray from "../../assets/search_gray.png"
+import discoverColored from "../../assets/discover_colored.png"
+import discoverGray from "../../assets/discover_gray.png"
 
 export function NavBar() {
 
@@ -21,12 +21,12 @@ export function NavBar() {
                 />
             </NavLink>
 
-            <NavLink to="/home/search"
+            <NavLink to="/home/discover"
             className={({ isActive }) =>
                 isActive ? "h-full pb-1  border-b-2 border-transparent [border-image:linear-gradient(to_right,#7FD1CC,#9694F5)_1]" : "h-full"}>
                 <img
                     className="w-10"
-                    src={path == "/home/search" ? searchColored : searchGray}
+                    src={path == "/home/discover" ? discoverColored : discoverGray}
                     alt=""
                 />
             </NavLink>

@@ -2,7 +2,7 @@ import { Link } from "react-router"
 import start from "../../assets/star.png"
 import type { ContentType } from "../../types/contentType"
 
-export function Card({ content }: { content: ContentType }) {
+export function CardHome({ content }: { content: ContentType }) {
     return (
         <section className="w-full flex flex-col bg-[#181C2A] rounded-lg p-2">
             <div className="w-full flex">

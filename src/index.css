@@ -10,7 +10,6 @@
 }
 
 html {
-  font-size: 62.5%;
   font-family: "Pridi", serif;
 }
 
@@ -20,7 +19,6 @@ body {
   min-width: 320px;
   min-height: 100vh;
 
-  font-size: 1.6rem;
   padding: 10px;
 }
 

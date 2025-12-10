@@ -2,6 +2,7 @@ import type { ContentType } from "../types/contentType"
 import kin from "../assets/kin.png"
 import together from "../assets/together.png"
 import air from "../assets/air.png"
+import moon from "../assets/moon.png"
 
 export const dataCards: ContentType[] = [
     {
@@ -22,10 +23,19 @@ export const dataCards: ContentType[] = [
     },
     {
         imgContent: air,
-        titleContent: "Together with Me",
+        titleContent: "Love in The Air",
         producer: "Me Mind Y",
         imdb: 8.1,
         summary: "Rain, um cara bonito e de pele clara teve alguns problemas com seu carro em um dia chuvoso. Felizmente, Phayu, um motociclista bonitão, veio em socorro. Rain ficou totalmente cativado pelo visual dele assim que tirou o capacete e quis ser tão descolado quanto ele. Acontece que Phayu é na verdade o veterano famoso que também é o cara dos sonhos de toda garota, incluindo a garota que Rain estava de olho, e é por isso que Rain começou a não gostar um pouco de Phayu. Ele descobriu a identidade de Phayu na segunda vez que se encontraram, onde seu carro quebrou novamente. Phayu provocou Rain dizendo que ele está tentando seduzi-lo. Rain teve que passar a noite em sua garagem naquele dia. Phayu começou a provocá-lo novamente e agiu como se fosse tocar em Rain. E é por isso que Phayu se tornou o inimigo número 1 de Rain e quis revelar a verdadeira face de Phayu para mostrar a todos que ele não é tão bom quanto eles pensavam. Mas ele nunca ganhou e Phayu achou isso fofo. Como Rain nunca poderia vencê-lo, ele anunciou que faria Phayu se apaixonar por ele dentro de um mês.",
         lastUpdate: "26-11-2022"
-    }
+    },
+    {
+        imgContent: moon,
+        titleContent: "Moonlight Chicken",
+        producer: "The One Enterprise",
+        imdb: 8.6,
+        summary: "'Meu jantar à meia-noite todos os dias é o fim de um longo dia, mas também o começo de um novo.' - Jim. 'Moonlight Chicken' conta a história de Jim, um cara comum que vende arroz com frango hainanês para sobreviver, e que conhece Wen, um cliente bêbado, em seu restaurante. A noite que os une cria um sentimento difícil de explicar. Nenhum dos dois consegue parar de pensar um no outro, apesar de Wen ser comprometido. Tudo em suas vidas muda completamente depois disso.",
+        lastUpdate: "02-03-2023"
+    },
+
 ]

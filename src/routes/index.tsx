@@ -1,8 +1,9 @@
 import { Route, Routes } from "react-router"
+import { Home } from "../pages/home"
 import { Inicio } from "../pages/inicio"
 import { Signinorsignup } from "../pages/signinorsignup"
-import { Home } from "../pages/home"
-import { Search } from "../pages/search"
+
+import { SectionDiscover } from "../components/SectionDiscover"
 import { SectionHome } from "../components/SectionHome"
 
 export function MainRoutes() {
@@ -16,7 +17,7 @@ export function MainRoutes() {
 
             <Route path="/home" element={<Home />}>
                 <Route path="" element={<SectionHome />} />
-                <Route path=":search" element={<Search />} />
+                <Route path=":discover" element={<SectionDiscover />} />
             </Route>
         </Routes>
     )
