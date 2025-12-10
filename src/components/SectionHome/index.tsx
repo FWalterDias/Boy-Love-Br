@@ -27,8 +27,8 @@ export function SectionHome() {
 
             <div className="w-full flex flex-col gap-5 mt-8">
                 {
-                    dataCards.length > 1 ? dataCards.map((content: ContentType, indice) => (
-                        <CardHome key={indice} content={content} />
+                    dataCards.length > 1 ? dataCards.map((content: ContentType) => (
+                        <CardHome key={content.id} content={content} />
                     )) : null
                 }
             </div>

@@ -1,4 +1,4 @@
-import type { PageContent } from "../types/home"
+import type { PageContent } from "../types/pageContentTypes"
 import homeImage from "../assets/home_image.png"
 import loginImage from "../assets/login_image.png"
 

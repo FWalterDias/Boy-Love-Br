@@ -33,7 +33,7 @@ export function NavBar() {
 
             <NavLink to="/home/category" 
             className={({ isActive }) =>
-                isActive ? "h-full border-b-2 border-transparent [border-image:linear-gradient(to_right,#7FD1CC,#9694F5)_1]" : "h-full"}>
+                isActive ? "h-full border-b-2 border-transparent [border-image:linear-gradient(to_right,#7FD1CC,#9694F5)_1] invisible" : "h-full invisible"}>
                 <img
                     className="w-5"
                     src={path == "/home/category" ? categoryColored : categoryGray}

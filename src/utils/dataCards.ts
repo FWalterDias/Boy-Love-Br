@@ -6,6 +6,7 @@ import moon from "../assets/moon.png"
 
 export const dataCards: ContentType[] = [
     {
+        id: 1,
         imgContent: kin,
         titleContent: "KinnPorsche",
         producer: "Be on Cloud",
@@ -14,6 +15,7 @@ export const dataCards: ContentType[] = [
         lastUpdate: "09-06-2022"
     },
     {
+        id: 2,
         imgContent: together,
         titleContent: "Together with Me",
         producer: "TV Thunder",
@@ -22,6 +24,7 @@ export const dataCards: ContentType[] = [
         lastUpdate: "28-09-2018"
     },
     {
+        id: 3,
         imgContent: air,
         titleContent: "Love in The Air",
         producer: "Me Mind Y",
@@ -30,6 +33,7 @@ export const dataCards: ContentType[] = [
         lastUpdate: "26-11-2022"
     },
     {
+        id: 4,
         imgContent: moon,
         titleContent: "Moonlight Chicken",
         producer: "The One Enterprise",

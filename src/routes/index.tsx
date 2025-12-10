@@ -5,6 +5,7 @@ import { Signinorsignup } from "../pages/signinorsignup"
 
 import { SectionDiscover } from "../components/SectionDiscover"
 import { SectionHome } from "../components/SectionHome"
+import { Player } from "../components/Player"
 
 export function MainRoutes() {
 
@@ -16,8 +17,10 @@ export function MainRoutes() {
             <Route path="/signUp" element={<Signinorsignup />} />
 
             <Route path="/home" element={<Home />}>
-                <Route path="" element={<SectionHome />} />
-                <Route path=":discover" element={<SectionDiscover />} />
+                <Route index  element={<SectionHome />} />
+                <Route path=":titleContent" element={<Player />} />
+
+                <Route path="discover" element={<SectionDiscover />} />
             </Route>
         </Routes>
     )
