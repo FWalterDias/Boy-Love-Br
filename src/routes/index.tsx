@@ -1,9 +1,7 @@
 import { Route, Routes } from "react-router"
-import { Inicio } from "../pages/inicio/index.tsx"
-import { Signinorsignup } from "../pages/signinorsignup/index.tsx"
-import { Home } from "../pages/home/index.tsx"
-
-
+import { Inicio } from "../pages/inicio"
+import { Signinorsignup } from "../pages/signinorsignup"
+import { Home } from "../pages/home"
 
 export function MainRoutes() {
 
