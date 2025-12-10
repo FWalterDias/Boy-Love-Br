@@ -1,4 +1,7 @@
 import { Route, Routes } from "react-router"
+import { Inicio } from "../pages/inicio"
+import { SignInOrSignUp } from "../pages/signInOrsignUp"
+import { Home } from "../pages/home"
 
 
 export function MainRoutes() {
