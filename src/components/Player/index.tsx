@@ -1,3 +1,4 @@
+import { Navigate } from "react-router";
 import start from "../../assets/star.png"
 import { useCurrentContent } from "../../store/useCurrentContent"
 
@@ -6,7 +7,7 @@ export function Player() {
     const { currentContent } = useCurrentContent();
 
     if (currentContent === null){
-        return alert("sem conteudo");   
+        return <Navigate to="/home" replace />;  
     } 
     
     return (
