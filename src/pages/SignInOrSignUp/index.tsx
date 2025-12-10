@@ -5,7 +5,7 @@ import { NavLink, useLocation } from "react-router"
 import { Logo } from "../../components/Logo"
 import { pageContent } from "../../utils/dataLogin"
 
-export function SignInOrSignUp() {
+export function Signinorsignup() {
 
     const path: string = useLocation().pathname;
 
