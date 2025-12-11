@@ -2,6 +2,7 @@ import { Outlet } from "react-router"
 import { Logo } from "../../components/Logo"
 import { NavBarMobile } from "../../components/NavBarMobile"
 import { NavBarDesktop } from "../../components/NavBarDesktop"
+import { AsideDesktop } from "../../components/AsideDesktop"
 
 
 export function Home() {
@@ -21,9 +22,7 @@ export function Home() {
                 <Outlet />
             </section>
 
-            <section className="hidden lg:block w-full lg:col-span-1">
-                 mais assistidos
-            </section>
+            <AsideDesktop />
         </div>
     )
 }
