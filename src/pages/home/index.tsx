@@ -4,14 +4,26 @@ import { NavBarMobile } from "../../components/NavBarMobile"
 import { NavBarDesktop } from "../../components/NavBarDesktop"
 import { AsideDesktop } from "../../components/AsideDesktop"
 import { usePath } from "../../hooks/usePath"
-import categoryColored from "../../assets/category_colored.png"
-import discoverColored from "../../assets/discover_colored.png"
-import homeColored from "../../assets/home_colored.png"
+import { titleRoutes } from "../../database/dataTitleRoutes"
 
 export function Home() {
 
-     const { path } = usePath();
-        console.log(path)
+    const { path } = usePath();
+    const basePath = path.split("/");
+
+    // Encontrar onde começa o primeiro número
+    const indexNumber = basePath.findIndex(item => !isNaN(Number(item)));
+
+    // Se tiver número, corta tudo a partir dele
+    const finalArray = indexNumber !== -1
+        ? basePath.slice(0, indexNumber)
+        : basePath;
+
+    // Monta a rota final
+    const finalPath = "/" + finalArray.join("/");
+
+    console.log(finalPath);
+
     return (
         <div className="w-full grid lg:grid-cols-6 gap-5">
             <section className="hidden w-full lg:flex absolute top-5">
@@ -27,8 +39,15 @@ export function Home() {
             </section>
 
             <section className="w-full lg:col-span-4 lg:pt-20">
-                <div className="flex gap-3"> 
-                    
+                <div className="hidden lg:flex items-end gap-3 mt-10">
+                    <img
+                        src={titleRoutes[basePath].icon}
+                        alt="img-route"
+                        className="w-[40px]"
+                    />
+                    <p className="text-lg font-bold">
+                        {titleRoutes[basePath].name}
+                    </p>
                 </div>
                 <Outlet />
             </section>

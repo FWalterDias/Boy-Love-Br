@@ -6,7 +6,7 @@ import type { ContentType } from "../../types/contentType"
 
 export function AsideDesktop() {
     return (
-        <aside className="hidden lg:block w-full h-full lg:col-span-1 pt-18">
+        <aside className="hidden lg:block w-full h-full lg:col-span-1 pt-32">
             <div className="relative w-full">
                 <img
                     src={iconSearch}

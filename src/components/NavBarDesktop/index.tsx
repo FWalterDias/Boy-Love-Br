@@ -24,7 +24,7 @@ export function NavBarDesktop() {
                     alt=""
                 />
                 <span>
-                    Home
+                    Início
                 </span>
             </NavLink>
 
