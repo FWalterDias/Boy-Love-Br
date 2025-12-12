@@ -1,13 +1,14 @@
 import { HiUser } from "react-icons/hi2"
 import { MdEmail } from "react-icons/md"
 import { PiLockKeyBold } from "react-icons/pi"
-import { NavLink, useLocation } from "react-router"
+import { NavLink } from "react-router"
 import { Logo } from "../../components/Logo"
 import { pageContent } from "../../database/dataLogin"
+import { usePath } from "../../hooks/usePath"
 
 export function Signinorsignup() {
 
-    const path: string = useLocation().pathname;
+     const { path } = usePath();
 
     return (
         <div className="w-full flex flex-col lg:flex-row gap-2 items-center justify-evenly">

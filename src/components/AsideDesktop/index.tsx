@@ -6,7 +6,7 @@ import type { ContentType } from "../../types/contentType"
 
 export function AsideDesktop() {
     return (
-        <aside className="hidden lg:block w-full h-full lg:col-span-1">
+        <aside className="hidden lg:block w-full h-full lg:col-span-1 pt-18">
             <div className="relative w-full">
                 <img
                     src={iconSearch}
@@ -27,7 +27,7 @@ export function AsideDesktop() {
                 <Link to="#" className="text-sm text-[#208AAE]">Ver Todos</Link>
             </div>
 
-            <div>
+            <div className="flex flex-col gap-5">
                 {
                     dataCards.length > 1 ? dataCards.map((content: ContentType, indice) => (
                         <CardAside key={indice} content={content} />

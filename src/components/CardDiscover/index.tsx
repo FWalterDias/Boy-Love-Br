@@ -15,7 +15,7 @@ export function CardDiscover({ content }: { content: ContentType }) {
         <Link
             to={`/home/${content.id}`}
             onClick={() => setCurrentContent(content)}
-            className="w-full flex flex-col bg-[#181C2A] rounded-lg p-2"
+            className="w-full max-w-[180px] flex flex-col bg-[#181C2A] rounded-lg p-2"
         >
             <div className="w-full h-40 flex justify-center">
                 <img

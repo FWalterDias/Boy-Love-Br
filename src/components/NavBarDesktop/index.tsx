@@ -1,14 +1,15 @@
-import { NavLink, useLocation } from "react-router"
+import { NavLink } from "react-router"
 import categoryColored from "../../assets/category_colored.png"
 import categoryGray from "../../assets/category_gray.png"
-import homeColored from "../../assets/home_colored.png"
-import homeGray from "../../assets/home_gray.png"
 import discoverColored from "../../assets/discover_colored.png"
 import discoverGray from "../../assets/discover_gray.png"
+import homeColored from "../../assets/home_colored.png"
+import homeGray from "../../assets/home_gray.png"
+import { usePath } from "../../hooks/usePath"
 
 export function NavBarDesktop() {
 
-    const path: string = useLocation().pathname;
+     const { path } = usePath();
 
     return (
         <nav className="max-w-3xs h-full flex flex-col gap-5 bg-[#181C2A] rounded-lg px-4 py-30">
